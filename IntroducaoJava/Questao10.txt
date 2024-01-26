@@ -1,0 +1,31 @@
+/* Determine se cada uma das seguintes alternativas é verdadeira ou falsa. Se falsa, explique
+por quê.
+* O caso default é requerido na instrução de seleção switch.
+* A instrução break é requerida no último caso de uma instrução de seleção switch.
+* A expressão ((x > y)&&(a < b)) é verdadeira se (x > y) for verdadeiro ou (a < b) for
+verdadeira.
+* Uma expressão contendo o operador || é verdadeira se um ou ambos de seus operandos
+forem verdadeiros.
+* Para testar para uma série de valores em uma instrução switch, pode-se utilizar um
+hífen ( - ) entre os valores inicial e final da série em um rótulo case.
+* Listar casos consecutivamente sem instruções entre eles permite aos casos executar
+o mesmo conjunto de instruções. */
+
+O caso default é requerido na instrução de seleção switch.
+
+Falsa: O bloco default é opcional em uma instrução switch. Ele é executado quando nenhum dos rótulos case corresponde ao valor da expressão. Pode ser utilizado para lidar com casos não previstos.
+A instrução break é requerida no último caso de uma instrução de seleção switch.
+
+Falsa: A instrução break não é obrigatória no último caso de uma instrução switch. Se omitida, a execução continuará no próximo caso. No entanto, é uma prática comum incluir break para evitar a execução de casos subsequentes.
+A expressão ((x > y) && (a < b)) é verdadeira se (x > y) for verdadeiro ou (a < b) for verdadeira.
+
+Verdadeira: A expressão ((x > y) && (a < b)) será verdadeira se tanto (x > y) quanto (a < b) forem verdadeiros. Isso ocorre porque o operador lógico && (E lógico) requer que ambas as condições sejam verdadeiras para que a expressão total seja verdadeira.
+Uma expressão contendo o operador || é verdadeira se um ou ambos de seus operandos forem verdadeiros.
+
+Verdadeira: O operador || (OU lógico) retorna verdadeiro se pelo menos um dos seus operandos for verdadeiro.
+Para testar para uma série de valores em uma instrução switch, pode-se utilizar um hífen ( - ) entre os valores inicial e final da série em um rótulo case.
+
+Falsa: A instrução switch em Java não suporta um hífen entre os valores iniciais e finais da série em um rótulo case. Você deve listar cada valor individualmente ou utilizar outras técnicas, como a ausência de break para permitir que vários rótulos compartilhem o mesmo bloco de código.
+Listar casos consecutivamente sem instruções entre eles permite aos casos executar o mesmo conjunto de instruções.
+
+Verdadeira: Se não houver instruções entre os rótulos case, todos os rótulos consecutivos que não contenham break compartilharão o mesmo bloco de código. Isso permite que múltiplos rótulos executem o mesmo conjunto de instruções.
