@@ -37,34 +37,7 @@ public class TesteRegistroAcademico31 {
     }
 
     // Método toString para representar a instância em formato de string
-    @Override
     public String toString() {
         return "Matrícula: " + matricula + ", Nome: " + nome + ", Idade: " + idade;
     }
 }
-/* classe RegistroAcademico:
-    // Campo estático para armazenar o número total de matrículas
-    privado estatico inteiro numeroDeMatriculas = 0
-
-    // Atributos da classe
-    privado inteiro matricula
-    privado texto nome
-    privado inteiro idade
-
-    // Método construtor
-    funcao __init__(texto nome, inteiro idade):
-        // Incrementa o número total de matrículas e atribui à matrícula da instância atual
-        this.matricula = ++numeroDeMatriculas
-        this.nome = nome
-        this.idade = idade
-
-    // Métodos para obter informações da instância
-    funcao obterMatricula():
-        retorne this.matricula
-
-    funcao obterNome():
-        retorne this.nome
-
-    funcao obterIdade():
-        retorne this.idade
- */
